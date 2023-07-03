@@ -27,7 +27,10 @@ class Home extends StatelessWidget {
             ),
             Row(
               children: [
-                CircleAvatar(radius: 60,),
+                CircleAvatar(
+                  radius: 60,
+                  backgroundImage: AssetImage("images/avatar.jfif"),
+                ),
                 SizedBox(width: 30,),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -38,7 +41,7 @@ class Home extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(height: 50,),
+            SizedBox(height: 10,),
             Padding(
               padding: const EdgeInsets.only(left:30),
               child: Column(
@@ -46,35 +49,35 @@ class Home extends StatelessWidget {
                   Row(
                     children: [
                       Icon(Icons.shopping_bag, size: 40,),
-                      SizedBox(width: 20,),
+                      SizedBox(width: 25,),
                       Text("Texto 3", style: TextStyle(fontSize: 20))
                     ],
                   ),
                   Row(
                     children: [
                       Icon(Icons.account_balance, size: 40,),
-                      SizedBox(width: 20,),
+                      SizedBox(width: 25,),
                       Text("Texto 3", style: TextStyle(fontSize: 20))
                     ],
                   ),
                   Row(
                     children: [
                       Icon(Icons.add_a_photo, size: 40,),
-                      SizedBox(width: 20,),
+                      SizedBox(width: 25,),
                       Text("Texto 3", style: TextStyle(fontSize: 20))
                     ],
                   ),
                   Row(
                     children: [
                       Icon(Icons.account_circle, size: 40,),
-                      SizedBox(width: 20,),
+                      SizedBox(width: 25,),
                       Text("Texto 3", style: TextStyle(fontSize: 20))
                     ],
                   ),
                   Row(
                     children: [
                       Icon(Icons.add_business_rounded, size: 40,),
-                      SizedBox(width: 20,),
+                      SizedBox(width: 25,),
                       Text("Texto 3", style: TextStyle(fontSize: 20))
                     ],
                   ),
@@ -82,13 +85,15 @@ class Home extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 15.0),
-              child: Column(
-                children: <Widget>[
-                  Text("Acerca de mi"),
-                  Text("Creado por: Edwin"),
-                ],
-              ),
+              //padding: EdgeInsets.symmetric(vertical: 15.0),
+              padding: EdgeInsets.all(20.0),
+              child: Text("Acerca de mi fsfsdsdssdddddsdsdsfsfsddsdsdsdsdsdsdsdsdsd", style: TextStyle(fontSize: 22),),
+              //child: Text("Creado por: Edwin"),
+            ),
+            SizedBox(height: 160,),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Text("Creado por: Edwin"),
             ),
           ],
         ),
